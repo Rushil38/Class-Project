@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+box-sizing: border-box;
+}
+body {
+margin: 0;
+}
+
+.header {
+
+background-color:#00203FFF ;
+color:mintcream;
+
+padding: 20px;
+text-align: center;
+}
+/* Style the top navigation bar */
+.topnav {
+overflow: hidden;
+background-color:#00203FFF;
+}
+
+.topnav a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration:none;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.topnav a:hover {
+background-color:mintcream;
+color: #00203FFF;
+}
+
+.column {
+
+float: left;
+width: 33.33%;
+padding: 15px;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+h1, h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  size: 50px;
+}
+
+footer{
+ background-color:#00203FFF;
+ position: absolute;
+bottom: 0px;
+ left: 0px;
+ width: 100%;
+}
+#container{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ margin-left: 100px;
+ margin-right: 100px;
+}
+ .a{
+ font-size: 25px;
+ margin-left: 30px;
+ margin-top: 5px;
+ background-image: linear-gradient(60deg #405DE6 #5B51D8 #833AB4 #C13584 #E1306C #FD1D1D);
+ -webkit-text-fill-color: transparent;
+        }
+
+</style>
+</head>
+<body>
+<div class="header">
+<h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">My Blog</h1>
+<p style="font-family: Georgia, 'Times New Roman', Times, serif;">"Embrace Inspiration: Your Journey Starts Here at My Blog!"</p>
+<p></p>
+
+</div>
+<div class="topnav">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Contacts</a>
+</div>
+<div class="row" style="background-color: mintcream;">
+<div class="column">
+<h2 style="font-family:Georgia, 'Times New Roman', Times, serif">About me</h2>
+<p>Welcome to My Blog! I'm Rushil, a passionate explorer, food enthusiast, fitness aficionado, and yoga practitioner. With a deep love for travel, I've embarked on countless adventures around the globe, seeking out hidden gems and immersing myself in diverse cultures and cuisines.</p>
+<p >When I'm not off exploring new destinations, you'll often find me experimenting in the kitchen, whipping up delicious meals inspired by my travels. I believe that food is not only a source of nourishment but also a way to connect with others and experience different cultures.</p>
+<br>
+<br>
+<br><br><br><br>
+</div>
+<div class="column">
+    <h2>Popular Posts</h2>
+    <ul>
+        <li><a href="#" style="text-decoration: none; color: black; font-family: Georgia, 'Times New Roman', Times, serif;">5 Must-Visit Destinations for Nature Lovers</a></li>
+        <li><a href="#" style="text-decoration: none; color: black; font-family: Georgia, 'Times New Roman', Times, serif;">How to Stay Motivated When Pursuing Your Goals</a></li>
+        <li><a href="#" style="text-decoration: none; color: black; font-family: Georgia, 'Times New Roman', Times, serif;">The Impact of Artificial Intelligence on Society</a></li>
+    </ul>
+</p>
+</div>
+<div class="column">
+    <h2>Latest Blog Post</h2>
+    <article>
+        <h3>10 Tips for Productive Remote Work</h3>
+        <p>Working remotely has become increasingly common, but it comes with its own set of challenges. In this blog post, I share 10 tips to stay productive while working from home.</p>
+        <a href="#">Read more</a>
+    </article>
+</div>
+</div>
+<footer>
+    <div id="container">
+        <p style="color: aliceblue;">Follow me<i class="fa-brands fa-instagram a"></i></p><hr>
+    </div>
+</footer>
+</body>
+</html>
